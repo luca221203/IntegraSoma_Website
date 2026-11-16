@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preisgestaltung — IntegraSoma by Susanne Kreutz Lamm</title>
+  <meta name="description" content="Preise und Sitzungsformate von IntegraSoma by Susanne Kreutz Lamm." />
+  <link rel="icon" href="assets/img/integrasoma-icon-v3.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.4rem;
+    }
+    .price-card {
+      background: var(--color-surface);
+      border-radius: var(--radius);
+      padding: 2.4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .price-card__amount {
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: var(--color-bordeaux-soft);
+    }
+    .price-card__amount span {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: var(--color-text-soft);
+    }
+    @media (max-width: 860px) {
+      .price-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="assets/img/integrasoma-icon-v3.svg" alt="" class="brand-icon" />
+        <span class="brand-text">IntegraSoma</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <div class="nav-item">
+          <a href="angebote.html">Angebote<span class="nav-caret">⌄</span></a>
+          <ul class="nav-dropdown">
+            <li><a href="angebote.html#wingwave">wingwave®</a></li>
+            <li><a href="angebote.html#somarelease">SomaRelease</a></li>
+            <li><a href="angebote.html#thetahealing">ThetaHealing</a></li>
+          </ul>
+        </div>
+        <a href="preisgestaltung.html" class="is-active">Preisgestaltung</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="kontakt.html" class="btn btn-primary">Termin vereinbaren</a>
+        <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Start</a>
+    <a href="ueber-mich.html">Über mich</a>
+    <div class="mobile-nav__group">
+      <a href="angebote.html">Angebote</a>
+      <div class="mobile-nav__sub">
+        <a href="angebote.html#wingwave">wingwave®</a>
+        <a href="angebote.html#somarelease">SomaRelease</a>
+        <a href="angebote.html#thetahealing">ThetaHealing</a>
+      </div>
+    </div>
+    <a href="preisgestaltung.html">Preisgestaltung</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="kontakt.html" class="btn btn-primary">Termin vereinbaren</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container" data-reveal>
+        <p class="eyebrow">Preisgestaltung</p>
+        <h1>Transparent &amp; fair</h1>
+        <p>Ein Überblick über Sitzungsformate und Preise. Im kostenlosen telefonischen Vorgespräch klären wir, welches Coaching zu Ihrem Anliegen passt.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="price-grid price-grid--4" data-reveal>
+          <div class="price-card">
+            <h3>Vorgespräch</h3>
+            <div class="price-card__amount">Kostenlos <span>· ca. 15 Min.</span></div>
+            <p>Telefonisch – um herauszufinden, was Sie möchten.</p>
+          </div>
+          <div class="price-card">
+            <h3><a href="angebote.html#wingwave">wingwave®</a></h3>
+            <div class="price-card__amount">180 € <span>· 90 Min.</span></div>
+            <p>wenn wieder mehr möglich sein kann<br />Sprachen: Lëtzebuergesch, Deutsch</p>
+          </div>
+          <div class="price-card">
+            <h3><a href="angebote.html#somarelease">SomaRelease</a></h3>
+            <div class="price-card__amount">120 € <span>· 60 Min.</span></div>
+            <p>für einen Körper der Sie trägt<br />Sprachen: Lëtzebuergesch, Deutsch, Englisch</p>
+          </div>
+          <div class="price-card">
+            <h3><a href="angebote.html#thetahealing">ThetaHealing</a></h3>
+            <div class="price-card__amount">180 € <span>· 90 Min.</span></div>
+            <p>wenn die Veränderung tiefer gehen darf<br />Sprachen: Lëtzebuergesch, Deutsch</p>
+          </div>
+        </div>
+        <p class="price-footnote">Preise sind Bruttopreise inkl. MwSt.</p>
+      </div>
+    </section>
+
+    <section class="cta-band" data-reveal>
+      <div class="container container--narrow">
+        <h2>Fragen zu den Preisen?</h2>
+        <p>Melden Sie sich gerne – im Vorgespräch beantworte ich alle Fragen.</p>
+        <a href="kontakt.html" class="btn btn-outline">Termin vereinbaren</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="assets/img/logo-no-tagline.svg" alt="IntegraSoma by Susanne Kreutz Lamm" />
+          </a>
+          <p>Ganzheitliches Coaching in Luxemburg — Spüren. Verstehen. Integrieren.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="ueber-mich.html">Über mich</a></li>
+            <li><a href="angebote.html">Angebote</a></li>
+            <li><a href="preisgestaltung.html">Preisgestaltung</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="mailto:S.KreutzLamm@IntegraSoma.lu">S.KreutzLamm@IntegraSoma.lu</a></li>
+            <li><a href="kontakt.html">Kontaktformular</a></li>
+            <li><a href="https://wa.me/352621642123" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 IntegraSoma by Susanne Kreutz Lamm</span>
+        <span>Das Coaching ersetzt keine ärztliche oder therapeutische Behandlung. · Website von Mediawo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
